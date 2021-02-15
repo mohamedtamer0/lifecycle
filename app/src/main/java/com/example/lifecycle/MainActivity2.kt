@@ -16,6 +16,13 @@ class MainActivity2 : AppCompatActivity() {
             finish()
         }
 
+        btndata.setOnClickListener {
+
+            var name = intent.getStringExtra("name")
+            Toast.makeText(this,name,Toast.LENGTH_SHORT).show()
+
+        }
+
 
 
     }

@@ -21,7 +21,9 @@ class MainActivity : AppCompatActivity() {
 
         btnActivity.setOnClickListener {
             var i2 = Intent(this,MainActivity2::class.java)
+            i2.putExtra("name","Tamer")
             startActivity(i2)
+
         }
 
     }
